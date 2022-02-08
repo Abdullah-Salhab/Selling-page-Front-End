@@ -1,0 +1,1213 @@
+<!-----------
+    1-  monday  23/6/2020   2 hours
+    2- friday   26/6/2020 1/2 hour
+    3- saturday 27/6/2020 1/2 hour
+    4- wednesday 23/9/2020 1 hour
+    5- 7/10/2020 3 hours
+    6- 9/10/2020 7 hours Css js html 
+    I am finish a lot of page
+    7- 1:30 hour
+    after this days 7 days 15 hours I am finish the page 
+    product and good luck in the next work 
+    ---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+<style>
+body{
+    background-color:white;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+del{
+    color: rgb(184, 0, 0);
+}
+/* This is the header of the page*/
+.header{
+    position: absolute;
+    top:0px;
+}
+.header div{
+    float: left;
+}
+.header div:first-child{
+    margin: 0;
+}
+.header .search {
+    padding: 3px 10px;
+    border: 2px solid gray;
+    background:linear-gradient(rgb(175, 175, 175) ,rgba(197, 197, 197) );
+    margin-left: 250px;
+    margin-top: 3px;
+    border-radius: 25px;
+    width: 500px;
+}
+.search input{
+    padding: 0px 2px;
+    width: 390px;
+    height: 30px;
+    font-size: 16px;
+    background:linear-gradient(rgb(175, 175, 175) ,rgba(197, 197, 197) );
+    border: none;
+    outline: none;
+}
+
+.search input::placeholder{
+    color: rgb(78, 78, 78);
+}
+.search button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: background-color 1s ,color 1s;
+    background:rgb(150, 139, 139);
+    outline: none;
+    border: none;
+}
+.search button:hover{
+    background: rgb(214, 39, 39);
+}
+.header .account{
+    margin-top: 18px;
+    color: black;
+    margin-left: 120px;
+}
+.header .buy{
+    margin-top: 18px;
+    color: black;
+    margin-left: 80px;
+}
+/*----------------------------------------------------*/
+/* This is the navigation bar */
+header{
+    position: relative;
+    top: 55px;
+    left: 0px;
+    width:99.8%;
+    border: solid black 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgb(141, 141, 141) ,rgba(197, 197, 197) );
+    overflow: hidden;
+}
+header li{
+    float: left;
+}   
+li a{
+    display: inline-block;
+    color: black;
+    padding: 15px 30px;
+    width: max-content;
+    text-decoration: none;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 1s ;
+}
+ul li:last-child a{
+    width: 143px;
+    float: right;
+} 
+/* for the content for all li navigation bar*/
+.header_content{
+    background-color: white;
+    top: 75px;
+    position: absolute;
+    height: 700%;
+    width: 90%;
+    left: 5%;
+    z-index: 10;
+    border: 1px solid gray;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ,visibility 0.1s,transform 1s;
+}
+.header_content > a{
+    position: relative;
+    width: 15%;
+    height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-left: 3%;
+}
+header li:hover .header_content{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(-21.3px);
+}
+.header_content a p:hover{
+    color: red;
+}
+.header_content  a:first-child{
+    margin-left: 4%;
+}
+.header_content  a:last-child img{
+    margin-top: 4%;
+}
+.header_content  a:last-child p{
+    margin-top: 3%;
+}
+header li:last-child ,header li:nth-child(7){
+    transition: background-color 1s;
+}
+header li:last-child:hover ,header li:nth-child(7):hover{
+    background-color: rgb(255, 64, 64);
+}
+.line_header{
+    width: 70%;
+    position: absolute;
+    top: 70%;
+    border-bottom: 0.1ex solid rgba(128, 128, 128, 0.623);
+    left: 0;
+}
+.new_header {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+}
+.new_header a{
+    position: relative;
+    width: 15%;
+    height: 150px;
+    font-size: 16px;
+    margin-left: 3%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header_company{
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    float: left;
+    left: 0;
+    right: 0px;
+    padding: 0px;
+}
+.header_company img{
+    width: 90px;
+    height: 70px;
+    margin-left: -50px;
+}
+/*--------------------------------*/
+/* this part for the images and text price etc..*/
+.content_all_top{
+    position: relative;
+    margin-top: 6%;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.618);
+}
+#content{
+    width: 370px;
+    height: 370px;
+    padding: 50px;
+    margin-left: 110px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#content img:hover{
+    width: 600px;
+    height: 500px;
+    margin-left: -100px;
+    margin-top: -50px;
+    cursor: crosshair;
+}
+#all-image{
+    width: max-content;
+    padding: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+#all-image img{
+    opacity: 0.4;
+    margin-left: 30px;
+}
+#all-image img:hover{
+    cursor: pointer;
+}
+#all-image img:nth-child(2){
+    opacity: 1;
+}
+#all-text{
+    position: absolute;
+    right: 2%;
+    top: 0px;
+    font-size: 20px;
+    width: 45%;
+    padding-left: 20px;
+    border-left: 1px solid rgba(128, 128, 128, 0.618);
+    height: 100%;
+}
+.textPart1{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.576);
+    padding-bottom: 5%;
+    width: 100%;
+}
+.textPart2{
+    padding-top: 5%;
+    width: 100%;
+}
+#all-text #icon img{
+    margin-bottom: -10px ;
+    width: auto;
+    height: 60px;
+}
+#numberCart{
+    position: absolute;
+    right: 30px;
+    top: 35%;
+    padding: 5px;
+}
+#numbers{
+    padding: 10px 0px 13px 10px;
+    background-color: dimgrey;
+    border: 2px gray ridge;
+    height: 20px;
+    color: rgb(255, 255, 255);
+}
+#add{
+    background-color: dimgrey;
+    text-align: center;
+    padding: 13px 50px 11px 50px;
+    color: rgb(255, 255, 255);
+    border: 2px gray ridge;
+    font-size: 18px;
+}
+input{
+    font-size: 25px;
+    width: 50px;
+}
+#add:hover{
+    cursor: pointer;
+    background-color: rgb(173, 0, 0);
+    color: snow;
+}
+#price{
+    font-size: 30px;
+    color: rgb(196, 0, 0);
+    font-weight: bold;
+    display: inline-block;
+}
+/* this is the second part of the page*/
+/* this is the header and contain 3 dives*/
+.content_header_center{
+    margin-top: 3%;
+    width: 100%;
+    position: relative;
+    height: 10%;
+    display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.576);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.content_header_center div{
+    width: fit-content;
+    text-align: center;
+    padding:1% 2%;
+    margin-left: 2%;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    font-size: 15px;
+}
+.content_header_center div:first-child{
+    margin-left: 30%;
+    background-color: rgb(173, 0, 0);
+}
+.content_header_center div *{
+    cursor: pointer;
+}
+/* this for the content of the center and divided to 2 parts left and right */
+.content_all_center{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 0.2%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.576);
+    padding-bottom: 2%;
+}
+/* the left side contain 3 section depend on the div before*/
+.left_center{
+    position: relative;
+    width: 60%;
+    margin: 2%;
+}
+.left_center table{
+    font-size: 14px ;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.left_center tr{
+    display: flex;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.652);
+}
+.left_center td{
+    padding: 15px;
+    width: 15%;
+}
+.left_center tr td:nth-child(2){
+    margin-left: 15%;
+}
+.left_center thead{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    font-size: 18px;
+}
+.left_center thead tr ,tr:last-child{
+    border-bottom: none;
+}
+.left_center thead td{
+    width: 50%;
+}
+#content_2{
+    position: relative;
+    margin: 2%;
+    background-color: rgba(51,51,51,0.05);
+    padding: 5% 10%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+#content_2 .write{
+    position: absolute;
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+    width: fit-content;
+    padding: 2% 3%;
+    background-color:  rgb(173, 0, 0);
+    top: 130%;
+    right:0%;
+}
+#content_2 .write:hover{
+    background-color:rgb(58, 58, 58);
+    cursor: pointer;
+}
+#content_3{
+    position: relative;
+    margin: 2%;
+    background-color: rgba(51,51,51,0.05);
+    padding: 1% 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+#content_3 .content_header3{
+    background-color: rgb(173, 0, 0);
+    color: white;
+    font-size: 25px;
+    padding: 1%;
+}
+#content_3 a:hover{
+    color: red;
+}
+/* this is the right side */
+#related{
+    padding: 2px 10px;
+    width: 32%;
+    margin-top:2%;
+    border-left: 1px solid rgba(128, 128, 128, 0.618);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#related h3{
+    font-weight: normal;
+}
+#related a{
+    display: flex;
+    position: relative;
+    width: 96%;
+    margin:2%;
+}
+#related a >label{
+    color: #444444;
+    position: absolute;
+    left: 35%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* this is the footer*/
+footer{
+    position: relative;
+    width: 96.7%;
+    padding-left: 40px;
+    background-color: rgb(87, 87, 87);
+    border: double 1px gray;
+    height: fit-content;
+}
+#copyright{
+    width: 100%;
+    color: white ;
+    background-color: rgb(173, 0, 0);
+    padding: 5px 0px;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+footer a:hover{
+    color: white;
+}
+/* this is button to go top*/
+#top{
+    font-size: 20px;
+    height:60px;
+    text-align: center;
+    position: fixed;
+    z-index: 20;
+    background-color: rgb(173, 0, 0);
+    bottom: 5%;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    display: none;
+}
+#top:hover{
+    background-color: rgb(58, 58, 58);
+}
+</style>
+</head>
+<body >
+    <!------ This part for header part search and logo page and account logo -->
+      <div class="header">
+        <div title="Selling Salhab Page">
+            <a  href="Selling_page.html">
+            <img src="image_Home/SSP_logo.png" width=50px height=auto style="margin-left: 50px;"></a>
+        </div>
+        <div class="search">
+            <img src="image_Home/search.png" width=20px height=20px style="float: left; margin-top: 7px;">
+            <input type="search" name="searchs" placeholder="Search" id="search_box" style="margin-left: 10px;">
+            <button id="search_button">Search</button>
+        </div>
+        <div class="account" >
+            <img src="image_Home/unnamed.png" width=30px height=30px style="float: left; margin: -6px 8px; ">
+            <span > My Account </span>
+        </div>
+        <div class="buy">
+            <img src="image_Home/cart.png" width=35px height=35px style="float: left; margin: -8px 8px; filter: brightness(-300%);">
+            <span >( 0 )</span>
+        </div>
+    </div>
+  <!------ This part for second header part navigation bar and link for page and content -->
+    <header >
+        <ul>
+            <li id="li1" onmouseover="active(1)" onmouseout="out(1)">
+                <a href="">Computer Systems</a>
+                <div class="header_content" id="header1">
+                  <a href="#">
+                    <img src="image_Home/Desktop-Computer-category-img-170x100.jpg" alt="img" width="150px" height="100px">
+                    <p>Desktop Computer</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/Laptops-category-img-170x100.jpg" alt="img" width="150px" height="100px">
+                    <p>Laptops</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/servers-category-img-170x100.jpg" alt="img" width="150px" height="100px" >
+                    <p>Servers & Workstation</p>
+                  </a>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/computer-systems-os.jpg" alt="img" width="300px" height="200px" style="margin-top: 100px;margin-left: 40px;">
+                  </a>
+                  <span class="line_header" style="top: 60%;"></span>
+                  <div class="header_company" style="left: 15%; width: 85%;" >
+                     <a href="#">
+                      <img src="image_Home/Acer-120x90.png"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/asus_logo-120x90.jpg" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/Dell-logo-120x90.png" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/HP_logo-120x90.png" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/Lenovo-logo-OS-jo-90x70.png" alt="img" >
+                     </a>
+                  </div>
+                </div>
+            </li>
+            <li id="li2" onmouseover="active(2)" onmouseout="out(2)">
+                <a href="">Components</a>
+                <div class="header_content" id="header2" style="height: 1600%;">
+                  <a href="#">
+                    <img src="image_Home/cpu-processor-os-100x100.jpg" alt="img" width="110px" height="110px">
+                    <p>CPU Processor</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/system-ram-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>System Memory </p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/computers-cases-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Computer Cases</p>
+                  </a>
+                  <div class="new_header">
+                   <a href="#">
+                    <img src="image_Home/ma41m_1-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>CPU Cooler </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/graphic-cards-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Graphics Cards </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/monitors-projectors-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Monitors & Projectors</p>
+                   </a>
+                  </div>
+                  <div class="new_header" style="top: 400px;">
+                   <a href="#">
+                    <img src="image_Home/mainboard-os-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Motherboards</p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/2823413-a-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Storage </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/IMG_1570-800x592-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Power Supplies </p>
+                   </a>
+                  </div>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/system-components.png" alt="img" width="300px" height="150px" style="margin-top: 140%;">
+                  </a>
+                  <span class="line_header" style=" left: 2%; top: 70%; width: 96%;"></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/1200px-ADATA_logo.svg-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/amd-logo-black-90x70.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/arktek-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ASRock_Logo-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/benq-logo-new-m-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/crucial-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Intel-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Kingston-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Lenovo-logo-OS-jo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/msi111111111-90x70.JPEG" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/nzxt_owler_20190724_170202_original-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/samsung-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/download-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Toshiba-Logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xfx-vector-logo-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li3" onmouseover="active(3)" onmouseout="out(3)">
+                <a href="">Accessories</a>
+                <div class="header_content" id="header3" style="height: 1300%;">
+                  <a href="#">
+                    <img src="image_Home/bags-130x150.jpg" alt="img" width="130px" height="130px">
+                    <p>Carrying Bags</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/keyboard-mouse-os-130x150.jpg" alt="img" width="130px" height="130px">
+                    <p>Keyboard & Mouse</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/laptop-battries-130x150.jpg" alt="img" width="130px" height="130px" >
+                    <p>Laptop Batteries</p>
+                  </a>
+                  <div class="new_header">
+                    <a href="#">
+                     <img src="image_Home/computers-cases-100x100.jpg" alt="img" width="110px" height="110px" >
+                     <p>Case Accessories</p>
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/computer-audio-os-130x150.jpg" alt="img" width="110px" height="110px" >
+                     <p>Audio</p>
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ups-systems-os-130x150.jpg" alt="img" width="110px" height="110px" >
+                     <p>UPS Systems</p>
+                    </a>
+                   </div>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/computer-accessories.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header" style="top: 60%; width: 100%;"></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/xvjooakx5v-90x70.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/dyno_logo-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ZZZZZZZZZ-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/hyperx-logo-lrg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Group-14-90x70.jpeg" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/microsoft-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/noctua_logo_1326_409px-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/nzxt_owler_20190724_170202_original-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/STEELSEREIS-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li4"  onmouseover="active(4)" onmouseout="out(4)">
+                <a href="">Network</a>
+                <div class="header_content" id="header4">
+                  <a href="#">
+                    <img src="image_Home/router.png" alt="img" width="130px" height="130px">
+                    <p>Wireless Network</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/LAN-Access-Switches-os-120x100.png" alt="img" width="130px" height="130px">
+                    <p>Wired Switches</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/network-cables-os-120x100.png" alt="img" width="130px" height="130px" >
+                    <p>Network Cables</p>
+                  </a> 
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/router.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header"></span>
+                  <div class="header_company" style="left: 30%; width: 70%; bottom: 1%;" >
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/D-Link_logo_black-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/TPLINK_Logo_2-90x70.png" alt="img"  >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li5"  onmouseover="active(5)" onmouseout="out(5)">
+                <a href="">Printers & Scanners</a>
+                <div class="header_content" id="header5">
+                  <a href="#">
+                    <img src="image_Home/inkjet-printer-200x160.jpg" alt="img" width="150px" height="150px">
+                    <p>Inkjet Printer</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/laser-printer-cartridge-os-200x160.jpg" alt="img" width="160px" height="150px">
+                    <p>Laser Printers</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/Scanner-os-200x160.png" alt="img" width="150px" height="150px" >
+                    <p>Scanners </p>
+                  </a>
+                  <a style="padding: 0;margin-left: 20px;">
+                    <img src="image_Home/Scanner-os-200x160.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header"></span>
+                  <div class="header_company" style="left: 30%; width: 70%; bottom: 1%;" >
+                    <a href="#">
+                     <img src="image_Home/HP_logo-120x90.png"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/samsung-90x70.png" alt="img"  >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li6"  onmouseover="active(6)" onmouseout="out(6)">
+                <a href="">Gaming</a>
+                <div class="header_content" id="header6" style="height: 1000%;">
+                  <a href="#">
+                    <img src="image_Home/gaming-desktop-os-150x170.jpg" alt="img" width="150px" height="155px">
+                    <p>Gaming Desktop</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/gaming-laptop-os-150x170.jpg" alt="img" width="150px" height="155px">
+                    <p>Gaming Laptop</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/gaming-accessories-os-150x170.jpg" alt="img" width="150px" height="155px" >
+                    <p>Gaming Accessories</p>
+                  </a>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/61033239_9475890766.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header" style="top: 50%; "></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/Acer-120x90.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/amd-logo-black-90x70.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xvjooakx5v-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/dyno_logo-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ZZZZZZZZZ-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/hyperx-logo-lrg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Intel-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Group-14-90x70.jpeg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/2017-new-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/STEELSEREIS-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xfx-vector-logo-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li >
+                <a href="">Clearance</a>
+            </li>
+            <li>
+                <a href="">Bundles</a>
+            </li>
+        </ul>
+    </header>
+    <!------ This part for images and texts price and number of product etc -->
+    <div class="content_all_top">
+     <div id="content">
+         <img id="images" src="product/2.jpg" alt="image" width="100%" height="100%"  >
+     </div>
+     <div id="all-image">
+         <img src="product/1.jpg" alt="image"  width="100" height="100" onclick="set_image(1)" 
+         onmouseenter="img_over(1)"  onmouseleave="img_out(1)" id="img_1">
+         <img src="product/2.jpg" alt="image"  width="100" height="100" onclick="set_image(2)" 
+         onmouseenter="img_over(2)"  onmouseleave="img_out(2)" id="img_2"> 
+         <img src="product/3.jpg" alt="image"  width="100" height="100" onclick="set_image(3)" 
+         onmouseenter="img_over(3)"  onmouseleave="img_out(3)" id="img_3">
+         <img src="product/4.jpg" alt="image"  width="100" height="100" onclick="set_image(4)" 
+         onmouseenter="img_over(4)"  onmouseleave="img_out(4)" id="img_4">
+     </div>
+
+     <div id="all-text">
+         <div class="textPart1">
+          <h2>Samsung C24T550 24" 75Hz 1000R Curved FHD FreeSync Gaming Monitor</h2>
+          <label id="icon"><img src="product/samsung-90x70.png" alt="img"></label><br>
+          <p id="price" class="159" > JOD 159.00</p>
+          <div id="numberCart">
+              <input type="number" id="numbers" min="1" max="15" value="1" onchange="change_price(this)">
+              <label  id="add">Add To Cart</label><br>
+          </div>
+          <div class="left_text">
+           <label><b>Availability:</b> In Stock</label><br>
+           <label><b> Product Code:</b>  C24T550</label><br>
+           <label><b> Brand:</b> Samsung</label>
+          </div>
+         </div>
+         <div class="textPart2">
+         <label > 100 JOD + free delivery</label><br>
+         <label >Pick up from store</label>
+         </div>
+     </div>
+    </div>
+    <!------ This part for header part of the center and contain 3 dives -->
+    <div class="content_header_center">
+        <div class="content1" id="content1" onclick="show_content(1)" 
+        onmouseover="buttonover(1)" onmouseout="buttonout(1)">
+            <label >Product Specifications</label>
+        </div>
+        <div class="content2" id="content2" onclick="show_content(2)" 
+        onmouseover="buttonover(2)" onmouseout="buttonout(2)">
+            <label>Reviews</label>
+        </div>
+        <div class="content3" id="content3" onclick="show_content(3)" 
+        onmouseover="buttonover(3)" onmouseout="buttonout(3)">
+            <label>Contact Us</label>
+        </div>
+    </div>
+    <!------ This part for center part of and contain two sides -->
+    <div class="content_all_center">
+      <!------ This part for left part of the center and contain 3 content depend on the dives before -->
+      <div class="left_center">
+         <div id="content_1">
+           <table >
+          <thead>
+            <tr><td colspan="2">Monitor Specification</td></tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Screen Size</td>
+                <td>24.0</td>
+            </tr><tr>
+                <td>Refresh Rate</td>
+                <td>75Hz</td>
+            </tr><tr>
+                <td>Screen Resolution</td>
+                <td>1920 x 1080</td>
+            </tr><tr>
+                <td>Panel Technology</td>
+                <td>VA</td>
+            </tr><tr>
+                <td>Response Time</td>
+                <td>4MS</td>
+            </tr><tr>
+                <td>Contrast Ratio</td>
+                <td>3000:1</td>
+            </tr>
+            </tr><tr>
+                <td>Brightness</td>
+                <td>250cd/m2</td>
+            </tr>
+            </tr><tr>
+                <td>Monitor Colors</td>
+                <td>	Black</td>
+            </tr>
+            </tr><tr>
+                <td>Flat / Curved</td>
+                <td>Curved 1000R</td>
+            </tr>
+            </tr><tr>
+                <td>Color Saturation</td>
+                <td>100%</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><td colspan="2">Inputs & Outputs</td></tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Ports</td>
+                <td>HDMI 1.4x1 <br>2.0x1 <br>Display x1 <br>1.2 <br>VGA x1</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><td colspan="2">Advanced Feature</td></tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Color support</td>
+                <td>	16.7m color</td>
+            </tr><tr>
+                <td>Speakers</td>
+                <td>NO</td>
+            </tr>
+            </tr><tr>
+                <td>Warranty</td>
+                <td>3-Years</td>
+            </tr>
+          </tbody>
+           </table>
+         </div>
+         <div id="content_2">
+             <label >There are no reviews for this product.</label>
+             <div class="write">Write a review</div>
+         </div>
+         <div id="content_3">
+            <div class="content_header3"><label >Call Us</label></div>
+             <p>Contact our PC sales team by phone. We are open Saturday - Thursday
+                  09:00 AM - 5:00 PM and Thursday 9:00 AM - 3:00 PM.</p>
+             <h3><a href="tel:+96265692390">(06) 569 2390</a></h3>
+             <h3><a href="tel:+962795909745">(+962) 79 590 9745</a></h3>
+             <div class="content_header3"><label >Email Us</label></div>
+             <p>Send our PC sales team an email and we will get back to you as soon as we can.</p>
+             <a href="mailto:info@abdullah.com">Email Us Now</a>
+             
+         </div>
+      </div>
+      <!------ This part for right part of the center and contain some products -->
+      <div id="related">
+         <h3>Related Products</h3>
+        <a href="Product.html" >
+            <img src="product/22-3-600x600-1200x630-120x70.jpg" alt="image">
+            <label><label>Samsung LS22F350 22" Full-HD LED Monitor</label><br>
+               <label> <del>JOD 89.00</del>  JOD 79.00 </label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/my-led-sf350fhe-ls24f350fhexxm-001-front-black-png-thumb-120x70.png" alt="image">
+            <label> <label>Samsung LS24F350 24" Full-HD super slim design </label><br>
+            <label> <del>JOD 115.00</del>  JOD 99.00 </label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/pdpgallery-lc24f390fhnxza-600x600-c4-052016-120x70.jpg" alt="image">
+            <label> <label>Samsung LC24F390 24" Full-HD 4MS Curved Monitor  </label><br>
+               <label> <del> JOD 129.00</del> JOD 119.00</label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/67767-120x70.jpg" alt="image">
+            <label> <label>Samsung LS27F350 27" Full-HD super slim design IPS  </label><br>
+               <label> <del>JOD 165.00</del>  JOD 145.00 </label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/LC27H580FDUXEN_1_supersize-120x70.jpg" alt="image">
+            <label> <label>Samsung C27H580 27" Full-HD blue-black bussines monitor </label><br>
+               <label> <del>JOD 249.00 </del> JOD 199.00</label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/pdpgallery-lc24f390fhnxza-600x600-c4-052016-120x70.jpg" alt="image">
+            <label> <label>Samsung LS27F390 27" Full-HD Curved monitor</label><br>
+               <label> <del>JOD 189.00 </del>   JOD 159.00 </label> </label>
+        </a >
+        <h3>People Also Bought</h3>
+        <a href="Product.html" >
+            <img src="product/B450ASROCK-130x100.JPEG" alt="image">
+            <label><label>ASROCK B450M Steel Legend M.2 AM4 ATX Motherboard  </label><br>
+               <label> <del>JOD 89.00  </del>  JOD 85.00 </label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/dde1dede-35a3-4729-a922-05f6b076355411-130x100.JPEG" alt="image">
+            <label> <label>GIGABYTE AORUS RGB Memory 16GB (2x8GB) 3200MHz   </label><br>
+            <label> <del>JOD 99.00</del>   JOD 85.00</label> </label>
+        </a >
+        <a href="Product.html">
+            <img src="product/1650S-1200x120011-130x100.JPEG" alt="image">
+            <label> <label>MSI NVIDIA GeForce 1650 SUPER 4GB VENTUS XS OC GDDR6    </label><br>
+               <label> <del>  JOD 179.00 </del>  JOD 169.00 </label> </label>
+        </a >
+     </div>
+    </div>
+    <!------ This part for footer part of the page and contain copyright and etc -->
+    <footer>
+       <strong> <p> Information</p></strong>
+       <p><a href="#"> About Us</a></p>
+       <p><a href="#"> Delivery Information</a></p>
+       <p><a href="#"> Privacy Policy</a></p>
+       <p><a href="#"> Terms & Conditions </a></p><br>
+       <strong><p> Customer Service </a></p></strong>
+       <p><a href="#"> Contact Us</a></p>
+       <p><a href="#"> Dell Service Center</a></p>
+       <div style="position: absolute;top:2%; left: 400px;">
+       <strong><p> Extras</p></strong>
+       <p><a href="#"> Brands</a></p>
+       <p><a href="#"> Specials</a></p>
+       <p><a href="#"> Sitemap</a></p>
+       </div>
+       <div style="position: absolute;top:2%; left: 700px;">
+       <strong><p> My Account</p></strong>
+       <p><a href="#"> Login</a></p>
+       <p><a href="#"> Register</a></p>
+       </div>
+    </footer>
+    <div id="copyright">
+        <p>Copyright © 2020 Abdullah Store for Cars | Web Development & SEO by DSTeck.com</p>
+    </div>
+    <!------ This part for button to go to the top of the page -->
+    <button id="top" onclick="to_top()">
+        <p>^</p>
+    </button>
+    <script>
+        var current=2;/* current image now*/
+        var current_content=1; /* current content from the left side*/
+        /* this function for set image in the content image*/
+        function set_image(img_src) {
+            document.getElementById("images").setAttribute('src','product/'+img_src+'.jpg');
+            var allImages=document.querySelectorAll('#all-image img');
+            allImages[img_src-1].style.opacity=1;
+            for (var index = 0; index < allImages.length; index++) {
+                if(index!=(img_src-1)){
+                allImages[index].style.opacity=0.4;
+                }
+            }
+            current=img_src;
+        }
+        /* this function for active li navgation bar */
+        function active(num) {
+         document.getElementById("li"+num).style.transition="background 1s";
+         document.getElementById("li"+num).style.backgroundColor="rgb(255, 64, 64)";
+        }
+        /* this part for not active li navgation bar*/
+        function out(num) {
+          document.getElementById("li"+num).style.transition="background 1s";
+          document.getElementById("li"+num).style.backgroundColor="initial";
+         }
+         /* this function for hover the images */
+         function img_over(num) {
+         document.getElementById("img_"+num).style.opacity=1;
+         }
+         /* this function for hover out the images */
+        function img_out(num) {
+         if(num!=current)
+         document.getElementById("img_"+num).style.opacity=0.4;
+        }
+        /* this function for show the content of left side and change the styels*/
+        function show_content(num) {
+            document.getElementById('content_'+num).style.display="block";
+            document.getElementById('content'+num).style.backgroundColor="rgb(173, 0, 0)";
+            if(num==1){
+                document.getElementById('content_2').style.display="none";
+                document.getElementById('content'+2).style.backgroundColor="rgb(58, 58, 58) ";
+                document.getElementById('content_3').style.display="none";
+                document.getElementById('content'+3).style.backgroundColor="rgb(58, 58, 58)";
+            }
+            if (num==2) {
+                document.getElementById('content_1').style.display="none";
+                document.getElementById('content'+1).style.backgroundColor="rgb(58, 58, 58) ";
+                document.getElementById('content_3').style.display="none";
+                document.getElementById('content'+3).style.backgroundColor="rgb(58, 58, 58) ";
+            }
+            if (num==3) {
+                document.getElementById('content_1').style.display="none";
+                document.getElementById('content'+1).style.backgroundColor="rgb(58, 58, 58) ";
+                document.getElementById('content_2').style.display="none";
+                document.getElementById('content'+2).style.backgroundColor="rgb(58, 58, 58) ";
+            }
+            current_content=num;
+        }
+        /* this function for active the div of header center on hover*/
+        function buttonover(num) {
+            document.getElementById('content'+num).style.backgroundColor="rgb(173, 0, 0)";
+            document.getElementById('content'+num).style.cursor="pointer";
+        }
+         /* this function for active the div of header center on hover out*/
+        function buttonout(num) {
+            if(num!=current_content)
+            document.getElementById('content'+num).style.backgroundColor="rgb(58, 58, 58)";
+        }
+        /* this function for change the price in price div*/
+        function change_price(num) {
+            var price=document.getElementById('price').className;
+            console.log(price);
+            if(num.value>0)
+            document.getElementById('price').innerText="JOD "+num.value*price+".00";
+            else{
+                document.getElementById('numbers').value=1;
+                document.getElementById('price').innerText="JOD "+price+".00";
+            }
+        }
+        /* this part to make the page go to the top and display the button depend on the height of the page*/
+        var buttonUP=document.getElementById('top'),counter=0;
+        document.body.onscroll=function(){
+            counter++;
+            console.log("you are scroll" +counter);
+            if(counter>30)
+            buttonUP.style.display="block";
+        }
+        function to_top() {
+            'use strict';
+            window.scrollTo(0,0);
+        }
+    </script>
+</body>
+</html>

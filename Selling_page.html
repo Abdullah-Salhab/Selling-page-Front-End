@@ -1,0 +1,944 @@
+<!-----------------------
+ 3day 6/2020 4 hours CSS + HTML + JS
+ 25/9/2020 1 hour for Search + 1.30 hour CSS + HTML
+ 26/9/2020 2 hours CSS + 1 hour Search + HTML
+ 27/9/2020 3 hours Search + CSS + HTML 
+ 28/9/2020 2.30 hours Search + CSS 90% + HTML 
+ 30/9/2020 3 hours Search + CSS + HTML 
+ I am finish the CSS and HTML and the information for the main page in 30/9/2020
+ and it is take 18 hours in 7 days so it is not easy
+ 1/10/2020 6:30 hour search 10% + css 65% + js 25%
+ 2/10/2020 4 hours Css 70% + js 30% 
+ 3/10/2020 4 hours Css 30% + Search(enter data) 40% + HTML 30%
+ 4/10/2020 1 minute for comment + 3:30 hours js and solve bug js 90% + Css 10% 
+ 5/10/2020 3 hours enter data and search (HTML) + Css 30%
+ I am finish the page and make it active by js and CSS and it takes 21:30 hours
+ in 5 days to make the activites and styles for it 
+ Finally after 40 hours from work in 12 days 
+ and write about 940 lines HTML and about 600 lines CSS and 120 lines Javascript 
+ about 1700 lines of code HTML and CSS and JS
+ Finally I am finish in 5/10/20 so its hard work but the result forget me the 
+ effort so I am happy beacuse it is my first project.
+
+
+ ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^  ^_^
+
+
+ THE Programmer Is : ABDULLAH MOHAMMAD SALHAB 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selling page</title>
+    <link rel="stylesheet" href="Selling_page.css">
+    <script src="Selling_page.js" >
+    </script>
+</head>
+<body>
+  <!------ This part for header part search and logo page and account logo -->
+    <div class="header">
+        <div title="Selling Salhab Page">
+            <a  href="Selling_page.html">
+            <img src="image_Home/SSP_logo.png" width=50px height=auto style="margin-left: 50px;"></a>
+        </div>
+        <div class="search">
+            <img src="image_Home/search.png" width=20px height=20px style="float: left; margin-top: 7px;">
+            <input type="search" name="searchs" placeholder="Search" id="search_box" style="margin-left: 10px;">
+            <button id="search_button">Search</button>
+        </div>
+        <div class="account" >
+            <img src="image_Home/unnamed.png" width=30px height=30px style="float: left; margin: -6px 8px; ">
+            <span > My Account </span>
+        </div>
+        <div class="buy">
+            <img src="image_Home/cart.png" width=35px height=35px style="float: left; margin: -8px 8px; filter: brightness(-300%);">
+            <span >( 0 )</span>
+        </div>
+    </div>
+  <!------ This part for second header part navigation bar and link for page and content -->
+    <header >
+        <ul>
+            <li id="li1" onmouseover="active(1)" onmouseout="out(1)">
+                <a href="">Computer Systems</a>
+                <div class="header_content" id="header1">
+                  <a href="#">
+                    <img src="image_Home/Desktop-Computer-category-img-170x100.jpg" alt="img" width="150px" height="100px">
+                    <p>Desktop Computer</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/Laptops-category-img-170x100.jpg" alt="img" width="150px" height="100px">
+                    <p>Laptops</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/servers-category-img-170x100.jpg" alt="img" width="150px" height="100px" >
+                    <p>Servers & Workstation</p>
+                  </a>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/computer-systems-os.jpg" alt="img" width="300px" height="200px" style="margin-top: 100px;margin-left: 40px;">
+                  </a>
+                  <span class="line_header" style="top: 60%;"></span>
+                  <div class="header_company" style="left: 15%; width: 85%;" >
+                     <a href="#">
+                      <img src="image_Home/Acer-120x90.png"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/asus_logo-120x90.jpg" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/Dell-logo-120x90.png" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/HP_logo-120x90.png" alt="img"  >
+                     </a>
+                     <a href="#">
+                      <img src="image_Home/Lenovo-logo-OS-jo-90x70.png" alt="img" >
+                     </a>
+                  </div>
+                </div>
+            </li>
+            <li id="li2" onmouseover="active(2)" onmouseout="out(2)">
+                <a href="">Components</a>
+                <div class="header_content" id="header2" style="height: 1600%;">
+                  <a href="#">
+                    <img src="image_Home/cpu-processor-os-100x100.jpg" alt="img" width="110px" height="110px">
+                    <p>CPU Processor</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/system-ram-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>System Memory </p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/computers-cases-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Computer Cases</p>
+                  </a>
+                  <div class="new_header">
+                   <a href="#">
+                    <img src="image_Home/ma41m_1-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>CPU Cooler </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/graphic-cards-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Graphics Cards </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/monitors-projectors-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Monitors & Projectors</p>
+                   </a>
+                  </div>
+                  <div class="new_header" style="top: 400px;">
+                   <a href="#">
+                    <img src="image_Home/mainboard-os-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Motherboards</p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/2823413-a-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Storage </p>
+                   </a>
+                   <a href="#">
+                    <img src="image_Home/IMG_1570-800x592-100x100.jpg" alt="img" width="110px" height="110px" >
+                    <p>Power Supplies </p>
+                   </a>
+                  </div>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/system-components.png" alt="img" width="300px" height="150px" style="margin-top: 140%;">
+                  </a>
+                  <span class="line_header" style=" left: 2%; top: 70%; width: 96%;"></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/1200px-ADATA_logo.svg-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/amd-logo-black-90x70.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/arktek-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ASRock_Logo-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/benq-logo-new-m-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/crucial-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Intel-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Kingston-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Lenovo-logo-OS-jo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/msi111111111-90x70.JPEG" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/nzxt_owler_20190724_170202_original-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/samsung-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/download-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Toshiba-Logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xfx-vector-logo-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li3" onmouseover="active(3)" onmouseout="out(3)">
+                <a href="">Accessories</a>
+                <div class="header_content" id="header3" style="height: 1300%;">
+                  <a href="#">
+                    <img src="image_Home/bags-130x150.jpg" alt="img" width="130px" height="130px">
+                    <p>Carrying Bags</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/keyboard-mouse-os-130x150.jpg" alt="img" width="130px" height="130px">
+                    <p>Keyboard & Mouse</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/laptop-battries-130x150.jpg" alt="img" width="130px" height="130px" >
+                    <p>Laptop Batteries</p>
+                  </a>
+                  <div class="new_header">
+                    <a href="#">
+                     <img src="image_Home/computers-cases-100x100.jpg" alt="img" width="110px" height="110px" >
+                     <p>Case Accessories</p>
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/computer-audio-os-130x150.jpg" alt="img" width="110px" height="110px" >
+                     <p>Audio</p>
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ups-systems-os-130x150.jpg" alt="img" width="110px" height="110px" >
+                     <p>UPS Systems</p>
+                    </a>
+                   </div>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/computer-accessories.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header" style="top: 60%; width: 100%;"></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/xvjooakx5v-90x70.png" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/dyno_logo-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ZZZZZZZZZ-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/hyperx-logo-lrg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Group-14-90x70.jpeg" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/microsoft-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/noctua_logo_1326_409px-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/nzxt_owler_20190724_170202_original-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/STEELSEREIS-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li4"  onmouseover="active(4)" onmouseout="out(4)">
+                <a href="">Network</a>
+                <div class="header_content" id="header4">
+                  <a href="#">
+                    <img src="image_Home/router.png" alt="img" width="130px" height="130px">
+                    <p>Wireless Network</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/LAN-Access-Switches-os-120x100.png" alt="img" width="130px" height="130px">
+                    <p>Wired Switches</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/network-cables-os-120x100.png" alt="img" width="130px" height="130px" >
+                    <p>Network Cables</p>
+                  </a> 
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/router.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header"></span>
+                  <div class="header_company" style="left: 30%; width: 70%; bottom: 1%;" >
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/D-Link_logo_black-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/TPLINK_Logo_2-90x70.png" alt="img"  >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li5"  onmouseover="active(5)" onmouseout="out(5)">
+                <a href="">Printers & Scanners</a>
+                <div class="header_content" id="header5">
+                  <a href="#">
+                    <img src="image_Home/inkjet-printer-200x160.jpg" alt="img" width="150px" height="150px">
+                    <p>Inkjet Printer</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/laser-printer-cartridge-os-200x160.jpg" alt="img" width="160px" height="150px">
+                    <p>Laser Printers</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/Scanner-os-200x160.png" alt="img" width="150px" height="150px" >
+                    <p>Scanners </p>
+                  </a>
+                  <a style="padding: 0;margin-left: 20px;">
+                    <img src="image_Home/Scanner-os-200x160.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header"></span>
+                  <div class="header_company" style="left: 30%; width: 70%; bottom: 1%;" >
+                    <a href="#">
+                     <img src="image_Home/HP_logo-120x90.png"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/samsung-90x70.png" alt="img"  >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li id="li6"  onmouseover="active(6)" onmouseout="out(6)">
+                <a href="">Gaming</a>
+                <div class="header_content" id="header6" style="height: 1000%;">
+                  <a href="#">
+                    <img src="image_Home/gaming-desktop-os-150x170.jpg" alt="img" width="150px" height="155px">
+                    <p>Gaming Desktop</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/gaming-laptop-os-150x170.jpg" alt="img" width="150px" height="155px">
+                    <p>Gaming Laptop</p>
+                  </a>
+                  <a href="#">
+                    <img src="image_Home/gaming-accessories-os-150x170.jpg" alt="img" width="150px" height="155px" >
+                    <p>Gaming Accessories</p>
+                  </a>
+                  <a style="padding: 0;margin: 0;">
+                    <img src="image_Home/61033239_9475890766.png" alt="img" width="300px" height="200px" style="margin-top: 100px;">
+                  </a>
+                  <span class="line_header" style="top: 50%; "></span>
+                  <div class="header_company" style="left: 0%;" >
+                    <a href="#">
+                     <img src="image_Home/Acer-120x90.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/amd-logo-black-90x70.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/asus_logo-120x90.jpg" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Cooler_Master_Logo.svg-90x70.png" alt="img"  >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/blog_Introducing-The-New-Sails-Logo-Content-1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Dell-logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xvjooakx5v-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/dyno_logo-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Gigabyte_logo.svg_1-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/ZZZZZZZZZ-90x70.jpg" alt="img" >
+                    </a>
+                    <a href="#" >
+                     <img src="image_Home/HP_logo-120x90.png" alt="img" >
+                    </a>
+                    <a href="#" style="margin-left: 50px;">
+                     <img src="image_Home/hyperx-logo-lrg-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Intel-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/Group-14-90x70.jpeg" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/mercury-computer-service-center-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/2017-new-logo-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/STEELSEREIS-90x70.png" alt="img" >
+                    </a>
+                    <a href="#">
+                     <img src="image_Home/xfx-vector-logo-90x70.png" alt="img" >
+                    </a>
+                 </div>
+                </div>
+            </li>
+            <li >
+                <a href="">Clearance</a>
+            </li>
+            <li>
+                <a href="">Bundles</a>
+            </li>
+        </ul>
+    </header>
+  <!------ This part for slider part and current image from slider -->
+    <div id="slider">
+        <div id="boxs">
+            <img src="image_Home/1.jpg" alt="img">
+        </div>
+        <button class="prev" onclick="prevImage()" >&lt;</button>
+        <button class="next" onclick="nextImage()" >&gt;</button>
+        <div class="current_img">
+            <div id="img_1" onclick="active_img(1)" onmouseover="img_over(1)"
+            onmouseout="img_out(1)"></div>
+            <div id="img_2" onclick="active_img(2)" onmouseover="img_over(2)"
+            onmouseout="img_out(2)"></div>
+            <div id="img_3" onclick="active_img(3)" onmouseover="img_over(3)"
+            onmouseout="img_out(3)"></div>
+            <div id="img_4" onclick="active_img(4)" onmouseover="img_over(4)"
+            onmouseout="img_out(4)"></div>
+            <div id="img_5" onclick="active_img(5)" onmouseover="img_over(5)"
+            onmouseout="img_out(5)"></div>
+        </div>
+    </div>
+  <!------ This part for all content of the page (body) -->
+    <div class="content">
+      <!------ This part for some links in the website -->
+      <nav class="links">
+        <a href="#"><img src="image_Home/laptop-icon-01.png" alt="laptops" >
+            <p> Laptops</p> </a>
+        <a href="#"><img src="image_Home/desktop-icon.png" alt="desktop-icon" >
+            <p> Desktop</p> </a>
+        <a href="#"><img src="image_Home/gaming icon.png" alt="gaming " >
+            <p> Gaming </p> </a>
+        <a href="#" ><img src="image_Home/Monitors.png" alt="Monitors" >
+            <p> Monitors</p> </a>
+        <a href="#"><img src="image_Home/PC Accessories.png" alt="PC Accessories" >
+            <p> PC Accessories</p> </a>
+        <a href="#"><img src="image_Home/servers-workstations.png" 
+           style="margin-left: 10px; width: 100%; height: 80%;"
+           alt="servers-workstations" ><p> Servers-Workstations</p> </a>
+        <a href="#"><img src="image_Home/new-items.png" alt="new-items" >
+            <p> New-Items</p> </a>
+        <a href="#"><img src="image_Home/new-price.png" alt="new-price" >
+            <p> New-Price</p> </a>
+        
+      </nav>
+      <!------ This part for new product -->
+      <div class="type_product">
+          <div class="left" ></div>
+          <div class="center">Featured Products</div>
+          <div class="right"></div>
+      </div>
+      <!------ This part for the first group of products -->
+      <div class="Featurd_product">
+          <div class="F_P1">
+              <a href="Product.html">
+                <div class="change_img_product">
+                <img src="image_Home/Back-to-school2-1200x1200.jpg" alt="1" class="product_img_1">
+                <img src="image_Home/T550SAMSUNG-550x400.JPEG" alt="2" class="product_img_2" 
+                style="width: 90%;height: 50%;left: 5%;top: 10%;">
+                </div>
+                <p>Samsung C24T550 24" 75Hz 1000R Curved FHD FreeSync Gaming Monitor</p>
+              </a>
+              <p>24.0", 75Hz, 1920 x 1080 , VA, 4MS, 3000:1, 250cd/m2, Black, Curved 1000R,
+                 100% , HDMI 1.4x1, 2.0x1</p>
+              <div class="line"></div>
+              <p class="price">JOD 159</p>
+          </div>
+          <div class="F_P2">
+              <a href="#">
+                <div class="change_img_product">
+                <img src="image_Home/fg73.jpeg-1200x1200.jpg" alt="2" class="product_img_1">
+                <img src="image_Home/HG70-3-1200x1200-550x400.jpg" alt="2" class="product_img_2"
+                style="width: 80%;height: 60%;left: 8%;">
+                </div>
+                <p>Samsung LC27HG70 27" 144Hz 1Ms Curved 2K QLED HDR Gaming Monitor</p>
+              </a>
+              <p>27.0", 144Hz, 2560 x 1440 2K, VA, 1MS, FreeSync, 3000:1, 250cd/m2,
+                 Black, Curved, 125% , HDMI x2 D</p>
+              <div class="line"></div>
+              <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 475 </del> JOD 389</p>
+          </div>
+          <div class="F_P3">
+              <a href="#">
+                <div class="change_img_product">
+                <img src="image_Home/back-3-1200x1200.jpg" alt="3" class="product_img_1">
+                <img src="image_Home/s-l1600-(1)-550x400.jpg" alt="2" class="product_img_2"
+                style="width: 80%;height: 60%;left: 5%;">
+                </div>
+                <p>Samsung LC32JG51 32" Full-HD 144Hz 4Ms Curved Gaming Monitor</p>
+              </a>
+              <p>31.5", 144Hz, 1920 x 1080 FHD, VA, 4MS, FreeSync, 3,000:1(Typ),
+                   250cd/m2, Silver, Curve, HDMI x2 Di</p>
+              <div class="line"></div>
+              <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 299 </del>JOD 269</p>
+          </div>
+      </div>
+      <!------ This part for new product -->
+      <div class="type_product">
+          <div class="left" ></div>
+          <div class="center">Stock Updates</div>
+          <div class="right"></div>
+      </div>
+      <!------ This part for the second group of products-->
+      <div id="sideSection">
+        <section class="sec1" id="sec1">
+         <div class="P1">
+            <div class="place" >
+            <a href="#">
+              <div class="change_img_product">
+              <img src="image_Home/24-281-027-S01-1200x1200.jpg"  alt="1" class="product_img_1">
+              <img src="image_Home/24tf4-1200x1200-550x400.jpg"  alt="2" class="product_img_2">
+              </div>
+              <p>ASUS TUF Gaming VG24VQ Gaming Monitor – 23.6 inch Full HD 144Hz 1Ms, VA PANEL,</p>
+            </a>
+            <p>23.6", 144Hz, 1920 x 1080 FHD, VA, 1MS, 3000:1, 350 cd/㎡, Black, CURVED,
+                 Signal Input : HDMI(v1.4) x </p>
+            </div>
+            <div class="line"></div>
+            <p class="price">JOD 219</p>
+        </div>
+        <div class="P2">
+            <div class="place">
+            <a href="#">
+              <div class="change_img_product">
+              <img src="image_Home/1650ss-1200x1200.jpeg" alt="2" class="product_img_1">
+              <img src="image_Home/tarjeta-grafica-asus-tuf-gtx-1650s-4g-gaming-550x400.jpg"  alt="2" class="product_img_2">
+              </div>
+              <p>Asus TUF-GTX1650S-4G-GAMING 4GB GDDR6</p>
+            </a>
+            <p>NVIDIA® GeForce GTX 1650 SUPER™, PCI Express 3.0, OpenGL 4.6,
+                 GDDR6 4GB, OC Mode - 1755 MHz (Boost C </p>
+            </div>
+            <div class="line"></div>
+            <p class="price"> JOD 179</p>
+        </div>
+        <div class="P3">
+            <div class="place">
+            <a href="#">
+              <div class="change_img_product">
+              <img src="image_Home/460TUF-1200x1200-1200x1200.jpg" alt="3" class="product_img_1">
+              <img src="image_Home/fan-550x400.jpg"  alt="2" class="product_img_2">
+              </div>
+              <p>ASUS TUF GAMING B460-PRO (WI-FI) ATX gaming motherboard</p>
+            </a>
+            <p>Intel® Socket 1200 for 10th Gen Intel® Core™, Pentium® Gold and 
+                Celeron® Processors *Supports Inte </p>
+            </div>
+            <div class="line"></div>
+            <p class="price">JOD 125</p>
+        </div>
+        <div class="P4">
+            <div class="place">
+            <a href="#">
+              <div class="change_img_product">
+              <img src="image_Home/kheeer-1200x1200.jpg" alt="4" class="product_img_1">
+              <img src="image_Home/10Th-Gen-i5-Processor-550x400.jpeg"  alt="2" class="product_img_2">
+              </div>
+              <p>Intel® Core™ i5-10400F 6-core Up to 4.3Ghz</p>
+            </a>
+            <p>Intel Core i5, i5-10400F, 6, 12, 2.90 GHz up to 4.30
+                 GHz, 12Mb smart cache, LGA 1200</p>
+            </div>
+            <div class="line"></div>
+            <p class="price">JOD 175</p>
+        </div>
+        <div class="P5" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/TRIO-1200x1200.jpg"  alt="1" class="product_img_1">
+               <img src="image_Home/GAMINGTRIO-1200x1200.jpg"  alt="2" class="product_img_2"
+                style=" height:250px;z-index: -1;">
+              </div>
+               <p>GeForce RTX™ 3080 GAMING X TRIO 10G GDDR6X</p>
+             </a>
+             <p>
+              NVIDIA® GeForce RTX™ 3080, PCI Express® Gen 4, OpenGL 4.6,
+               GDDR6X 10GB, 1740 MHz, 8704 Units, 19 Gbp </p>
+             </div>
+             <div class="line"></div>
+             <p class="price">JOD 899</p>
+         </div>
+         <div class="P6" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/71zIONG2PSL._AC_SL1500_-1200x1200.jpg"  alt="1" class="product_img_1">
+               <img src="image_Home/ES_LLE0XQAIFvOs-550x400.jpg"  alt="2" class="product_img_2">
+              </div>
+               <p>Alienware AW2521HF 24.5" FreeSync Gaming Monitor, IPS PANEL 1920 x 1080,
+                  240Hz, 1ms Response Time</p>
+             </a>
+             <p>24.5", 240Hz, 1920 x 1080 FHD,  IPS , 1MS G2G, 1,000:1 Contrast Ratio, 400 
+               cd/m2 Brightness, Flat, D  </p>
+             </div>
+             <div class="line"></div>
+             <p class="price">JOD 429</p>
+         </div>
+         <div class="P7" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/latitude5500-1200x1200.jpeg"  alt="1" class="product_img_1">
+               <img src="image_Home/latitude5500l-550x400.jpeg"  alt="2" class="product_img_2">
+              </div>
+               <p>Dell Latitude 5500 Intel® Core™ i5 8th Gen 8Gb 1Tb Business Laptop</p>
+             </a>
+             <p>
+              Core i5, 8th Generation, I5-8365U, up to 4.1GHz, 6MB Cache, 4 Cores, 8 Threads, 8GB, DDR4, 2, 2666MH </p>
+             </div>
+             <div class="line"></div>
+             <p class="price">JOD 675</p>
+         </div>
+         <div class="P8" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/10850k-1200x1200.jpeg"  alt="1" class="product_img_1">
+               <img src="image_Home/10th.jpg"  alt="2" class="product_img_2"
+               style=" height:200px;z-index: -1; width: 210px;" >
+              </div>
+               <p>Intel® Core™ i9-10850K Processor 20 MB Cash 10 Cores ,20 Thread (5.20 GHz Max Turbo)</p>
+             </a>
+             <p> i9-10850k, 10, 20, 3.70 GHz up to 5.2 GHz, 20Mb, LGA 1200                </p>
+             </div>
+             <div class="line"></div>
+             <p class="price">JOD 499</p>
+         </div>
+         
+         <label title="Next" id="next1" onclick="Scroll_right(1)">&gt;</label>
+         <label title="Previous" id="prev1" onclick="Scroll_left(1) ">&lt;</label>
+         <span id="scroll"><span id="scroll1"></span></span>
+        </section>
+      </div>
+      <!------ This part for new product -->
+      <div class="type_product">
+        <div class="left" ></div>
+        <div class="center">Price Updates</div>
+        <div class="right"></div>
+      </div>
+      <!------ This part for the third group of products-->
+      <div id="sideSection">
+        <section class="sec2" id="sec2">
+         <div class="P1" >
+             <div class="place" >
+             <a href="#">
+               <div class="change_img_product">
+               <img src="image_Home/-CC-9011147-WW-Gallery-SPEC-06-RGB-WHT-02-1200x1200.png"  alt="1" class="product_img_1" >
+               <img src="image_Home/-CC-9011147-WW-Gallery-SPEC-06-RGB-WHT-01-550x400.png"  alt="2" class="product_img_2">
+              </div>
+               <p>Corsair Carbide SPEC-06 RGB Tempered Glass Case — White</p>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 90 </del>JOD 79</p>
+         </div>
+         <div class="P2" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/-CC-9011144-WW-Gallery-SPEC-06-BLK-02-1200x1200.png" alt="2" class="product_img_1">
+               <img src="image_Home/-CC-9011144-WW-Gallery-SPEC-06-BLK-01-550x400.png"  alt="2" class="product_img_2">
+               <p>Corsair Carbide SPEC-06 Tempered Glass Case — Black</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 75 </del> JOD 69</p>
+         </div>
+         <div class="P3" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/-CC-9011145-WW-Gallery-SPEC-06-WHT-02-1200x1200.png" alt="3"class="product_img_1">
+               <img src="image_Home/-CC-9011145-WW-Gallery-SPEC-06-WHT-01-550x400.png"  alt="2" class="product_img_2">
+               <p>Corsair Carbide SPEC-06 Tempered Glass Case — white</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 75 </del>JOD 69</p>
+         </div>
+         <div class="P4" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/-CC-9011101-WW-Gallery-460X-RGB-01-1200x1200.png" alt="4" class="product_img_1">
+               <img src="image_Home/-CC-9011101-WW-Gallery-460X-RGB-24-550x400.png"  alt="2" class="product_img_2">
+               <p>Corsair Crystal Series™ 460X RGB Compact ATX Mid-Tower Case</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 139 </del>JOD 129</p>
+         </div>
+         <div class="P5" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/-CC-9011098-WW-Gallery-570X-RGB-01-1200x1200.png"  alt="5" class="product_img_1">
+               <img src="image_Home/-CC-9011098-WW-Gallery-570X-RGB-09-550x400.png"  alt="2" class="product_img_2">
+               <p> Corsair Crystal Series™ 570X RGB ATX Mid-Tower Case</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 90 </del>JOD 79</p>
+         </div>
+         <div class="P6" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/500d_se_built_38-1200x1200.png"  alt="1" class="product_img_1">
+               <img src="image_Home/l_10190623_001-550x400.jpg"  alt="2" class="product_img_2">
+               <p> Corsair Obsidian Series 500D RGB SE Premium Mid-Tower Case</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 225 </del>JOD 199</p>
+         </div>
+         <div class="P7" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/71J5PaijimL._AC_SL1500_-1200x1200.jpg"  alt="1" class="product_img_1">
+               <img src="image_Home/a1202-1200x1200-550x400.jpg"  alt="2" class="product_img_2">
+               <p>  ASUS ROG Ryuo 120 all-in-one liquid CPU cooler with color OLED, Aura Sync RGB, and
+                  ROG 120mm radiator fan</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 175 </del>JOD 159</p>
+         </div>
+         <div class="P8" >
+             <div class="place" >
+             <a href="#">
+              <div class="change_img_product">
+               <img src="image_Home/new-1200x1200.png"  alt="1" class="product_img_1">
+               <img src="image_Home/-CC-9011146-WW-Gallery-SPEC-06-RGB-BLK-01-550x400.png"  alt="2" class="product_img_2">
+               <p> Corsair Carbide SPEC-06 RGB Tempered Glass Case — Black</p>
+              </div>
+             </a>
+             </div>
+             <div class="line"></div>
+             <p class="price"><del style="color: rgb(180, 0, 0);margin-right: 15px;">JOD 90 </del>JOD 79</p>
+         </div>
+         
+         <label title="Next" id="next2" onclick="Scroll_right(2)">&gt;</label>
+         <label title="Previous" id="prev2" onclick="Scroll_left(2) ">&lt;</label>
+         <span id="scroll"><span id="scroll2"></span></span>
+        </section>
+      </div>
+      <!------ This part for new product -->
+      <div class="type_product">
+        <div class="left" ></div>
+        <div class="center">Our Brands</div>
+        <div class="right"></div>
+      </div>
+      <!------ This part for the brands -->
+      <div id="sideSection">
+        <section class="sec3" id="sec3">
+            <div class="P1B" style="margin-left: 12px;">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/Toshiba-Logo-120x90.png"  alt="1">
+                </a></div>
+            </div>
+            <div class="P2B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/TPLINK_Logo_2-120x90.png"  alt="2">
+                </a></div>
+            </div>
+            <div class="P3B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/logo-western-digital-120x90.png"  alt="3">
+                </a></div>
+            </div>
+            <div class="P4B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/xfx-vector-logo-120x90.png"  alt="4">
+                </a></div>
+            </div>
+            <div class="P5B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/XFX-Logo.wine-120x90.png"  alt="5">
+                </a></div>
+            </div>
+            <div class="P6B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/1497428521-120x90.png"  alt="6">
+                </a></div>
+            </div>
+            <div class="P7B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/Acer-120x90.png"  alt="7">
+                </a></div>
+            </div>
+            <div class="P8B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/1200px-ADATA_logo.svg-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P9B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/amd-logo-black-120x90.jpg"  alt="8">
+                </a></div>
+            </div>
+            <div class="P10B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/AMD_Radeon_logo-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P11B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/arktek-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P12B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/ASRock_Logo-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P13B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/asus_logo-120x90.jpg"  alt="8">
+                </a></div>
+            </div>
+            <div class="P14B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/benq-logo-new-m-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P15B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/Cooler_Master_Logo.svg-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <div class="P16B">
+                <div class="place">
+                <a href="#">
+                  <img src="image_Home/Dell-logo-120x90.png"  alt="8">
+                </a></div>
+            </div>
+            <label title="Next" id="next3" onclick="Scroll_right(3)">&gt;</label>
+            <label title="Previous" id="prev3" onclick="Scroll_left(3) ">&lt;</label>
+            <span class="scroll" id="scroll"><span id="scroll3"></span></span>
+        </section>
+      </div>
+    </div>
+  <!------ This part for the footer of the page and have some links and copyright-->
+    <footer>
+       <div class="footer">
+         <div style="margin-left: 30px;">
+             <strong> <div> Information</div></strong>
+             <div><a href="#"> About Us</a></div>
+             <div><a href="#"> Delivery Information</a></div>
+             <div><a href="#"> Privacy Policy</a></div>
+             <div><a href="#"> Terms & Conditions </a></div>
+         </div>
+         <div>
+             <strong><div> Customer Service </a></div></strong>
+             <div><a href="#"> Contact Us</a></div>
+             <div><a href="#"> Dell Service Center</a></div>
+         </div>
+         <div>
+             <strong><div> Extras</div></strong>
+             <div><a href="#"> Brands</a></div>
+             <div><a href="#"> Specials</a></div>
+             <div><a href="#"> Sitemap</a></div>
+         </div>
+         <div>
+             <strong><div> My Account</div></strong>
+             <div><a href="#"> Login</a></div>
+             <div><a href="#"> Register</a></div>
+         </div>
+       </div>
+     <div id="copyright">
+         <p>Copyright © 2020 Selling Salhab Page Store for Computers  | Web Development & SEO by Abdullah Salhab</p>
+     </div>
+    </footer>
+
+</body>
+</html>

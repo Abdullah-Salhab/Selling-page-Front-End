@@ -1,0 +1,586 @@
+/* it is take 5 days to make this style and take about 12 hours*/
+/* and take 5 days to make style for active style in js 10 hour*/
+body{
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+}
+/*----------------------------------------------------*/
+/* This is the header of the page*/
+.header{
+    position: absolute;
+    top:0px;
+}
+.header div{
+    float: left;
+}
+.header div:first-child{
+    margin: 0;
+}
+.header .search {
+    padding: 3px 10px;
+    border: 2px solid gray;
+    background:linear-gradient(rgb(175, 175, 175) ,rgba(197, 197, 197) );
+    margin-left: 250px;
+    margin-top: 3px;
+    border-radius: 25px;
+    width: 500px;
+}
+.search input{
+    padding: 0px 2px;
+    width: 390px;
+    height: 30px;
+    font-size: 16px;
+    background:linear-gradient(rgb(175, 175, 175) ,rgba(197, 197, 197) );
+    border: none;
+    outline: none;
+}  
+
+.search input::placeholder{
+    color: rgb(78, 78, 78);
+}
+.search button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 35px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: background-color 1s ,color 1s;
+    background:rgb(150, 139, 139);
+    outline: none;
+    border: none;
+}
+.search button:hover{
+    background: rgb(214, 39, 39);
+}
+.header .account{
+    margin-top: 18px;
+    color: black;
+    margin-left: 120px;
+}
+.header .buy{
+    margin-top: 18px;
+    color: black;
+    margin-left: 80px;
+}
+
+/*----------------------------------------------------*/
+/* This is the navigation bar */
+header{
+    position: relative;
+    top: 55px;
+    left: 0px;
+    width:99.8%;
+    border: solid black 1px;
+}
+header ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgb(141, 141, 141) ,rgba(197, 197, 197) );
+    overflow: hidden;
+}
+header li{
+    float: left;
+}   
+li a{
+    display: inline-block;
+    color: black;
+    padding: 15px 30px;
+    width: max-content;
+    text-decoration: none;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    transition: background-color 1s ;
+}
+ul li:last-child a{
+    width: 143px;
+} 
+/* for the content for all li navigation bar*/
+.header_content{
+    background-color: white;
+    top: 75px;
+    position: absolute;
+    height: 700%;
+    width: 90%;
+    left: 5%;
+    z-index: 10;
+    border: 1px solid gray;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ,visibility 0.1s,transform 1s;
+}
+.header_content > a{
+    position: relative;
+    width: 15%;
+    height: 150px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    float: left;
+    margin-left: 3%;
+}
+header li:hover .header_content{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(-21.3px);
+}
+.header_content a p:hover{
+    color: red;
+}
+.header_content  a:first-child{
+    margin-left: 4%;
+}
+.header_content  a:last-child img{
+    margin-top: 4%;
+}
+.header_content  a:last-child p{
+    margin-top: 3%;
+}
+header li:last-child ,header li:nth-child(7){
+    transition: background-color 1s;
+}
+header li:last-child:hover ,header li:nth-child(7):hover{
+    background-color: rgb(255, 64, 64);
+}
+.line_header{
+    width: 70%;
+    position: absolute;
+    top: 70%;
+    border-bottom: 0.1ex solid rgba(128, 128, 128, 0.623);
+    left: 0;
+}
+.new_header {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 100%;
+}
+.new_header a{
+    position: relative;
+    width: 15%;
+    height: 150px;
+    font-size: 16px;
+    margin-left: 3%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header_company{
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    float: left;
+    left: 0;
+    right: 0px;
+    padding: 0px;
+}
+.header_company img{
+    width: 90px;
+    height: 70px;
+    margin-left: -50px;
+}
+
+/*This is for slider images and buttons and current image */
+#slider{
+    width: 100%;
+    height: 550px;
+    margin-top: 55px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-bottom: 10px solid black;
+}
+#slider img{
+    width: 100%;
+    height: 550px;
+}
+#slider button{
+    padding: 20px;
+    border: none;
+    background-color:rgba(26, 41, 124, 0.678);
+    font-size: 30px;
+    color: gray;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    outline: none;
+    left: 0px;
+    transition: all 1s;
+}
+#slider .next{
+    border-radius: 10px 0px 0px 10px;
+    left: 96.5%;
+}
+#slider .prev{
+    border-radius: 0px 10px 10px 0px;
+    left: -1%;
+}
+#slider .next:hover ,#slider  .prev:hover{
+    cursor: pointer;
+    background-color:rgb(26, 41, 124);
+    color: white;
+}
+.current_img{
+    position: absolute;
+    width: max-content;
+    padding: 5px;
+    top: 92%;
+    margin-left: 43%;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.507);
+    float: left;
+    border-radius: 20px;
+}
+.current_img div{
+    border-radius: 50%;
+    padding: 7px;
+    margin: 5px 10px;
+    background-color: white;
+    float: left;
+    transition: all 0.5s;
+}
+.current_img div:hover{
+    cursor: pointer;
+}
+.current_img #img_5{
+    background-color: rgb(26, 41, 124);
+}
+/*---------------------------------*/
+/*This is for all content of the page (body)*/
+.content{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid gray;
+    padding-bottom: 50px;
+}
+/* This is for some links */
+.links  {
+    margin-top: 0px;
+    height: 260px;
+}
+.links a {
+    margin-top: 0px;
+    padding: 50px 20px;
+    text-decoration: none;
+    float: left;
+    width: 115px;
+    height: 120px;
+}
+.links a:first-child{
+    margin-left: 20px;
+}
+.links p{
+    margin-left: 25%;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.links p:hover{
+    color: red;
+}
+/*----------------------------------------------------*/
+/* This is for new type of product */
+.type_product{
+    width: 100%;
+    background-color: cadetblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.type_product .left{
+    margin-left: 4%;
+}
+.type_product .left , .right{
+    width: 36%;
+    margin-top:12px;
+    border-bottom : 2px solid gray;
+    float: left;
+}
+.type_product .center{
+    width: 20%;
+    float: left;
+    background:linear-gradient(rgb(148, 148, 148) ,rgba(197, 197, 197) );    ;
+    border: 2px gray solid;
+    font-size: 21px;
+    font-weight: bold;
+}
+/*----------------------------------------------------*/
+/* This is Featurd product the first one*/
+.Featurd_product{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+.Featurd_product >div{
+    width: 30%;
+    text-align: center;
+    border-right: 0.5px solid gray;
+    height: 500px;
+    float: left;
+    position: relative;
+    padding: 1%;
+}
+.Featurd_product .F_P1{
+    margin-left: 1.8%;
+}
+.Featurd_product .F_P3{
+    border-right: none;
+}
+.Featurd_product div a img {
+    width: 75%;
+    height: 60%;
+    z-index: -1;
+    left: 0px;
+}
+.Featurd_product div a{
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+.Featurd_product div > p{
+    font-size: 14px ;
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+.Featurd_product div .price{
+    font-size: 20px ;
+}
+.Featurd_product .line{
+    width: 100%;
+    margin-top: 10%;
+    border-bottom: 0.5px solid gray;
+}
+
+/*for all product */
+.line{
+    width: 100%;
+    margin-top: 15%;
+    border-bottom: 0.5px solid gray;
+}
+.place{
+    display: block;
+    height: 80%;
+}
+/*----------------------------------------------------*/
+/*This is for second products of the page*/
+#sideSection{
+    width: 100%;
+    overflow-x: hidden;
+}
+div section{
+    margin-top: 50px;
+    position: relative;
+    border: 1px solid gray;
+    padding: 20px;
+    height: 500px;
+   width: 2514px;
+    margin-left: 2px;
+    left:0px;
+    transition: left 2s ;
+}
+div >section >div{
+    float: left;
+    width: 285px;
+    text-align: center;
+    transition: left 2s ;
+    border-right: 1px solid gray;
+    margin-top: 30px;
+    height: 400px;
+    padding: 0.5%;
+}
+div section img {
+    width: 200px;
+    height:200px;
+}
+section > div >div  > p{
+    font-size: 14px ;
+    color: rgb(43, 43, 43);
+}
+section div a{
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+section div a p:hover{
+    color: rgb(209, 0, 0);
+}
+section div .price{
+    font-size: 20px ;
+    font-weight: bold;
+}
+section > div:nth-child(8){
+    border-right: none;
+}
+div section label{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    background-color: rgba(92, 92, 92, 0.774);
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid black;
+    transition: left 2s ;
+    color: white;
+}
+ #next1,#next2,#next3{
+    left: 1243px;
+}
+ #prev1,#prev2,#prev3{
+   left: 0px;
+}
+div section label:hover{
+    background-color: rgb(2, 89, 116);
+    cursor: pointer;
+}
+/*this for scroll*/
+#sideSection #scroll{
+    border: 1px solid gray;
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    top: 97%;
+    left: 0px;
+    transition: left 2s ;
+}
+#sideSection  #scroll span{
+    background:linear-gradient(rgb(85, 85, 85), rgb(177, 177, 177),rgb(85, 85, 85)) ;
+    height: 8px;
+    margin-top: 3px;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 10px;
+    left: 0%;
+    width: 20%;
+    position: absolute;
+    transition: left 2s ;
+}
+/*this for change image*/
+section a div {
+    position: relative;
+}
+.product_img_1{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+div .product_img_2{
+    visibility: hidden;
+    width: 250px;
+    height:200px;
+    opacity: 0;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transition: all 1s;
+}
+ a div:hover >.product_img_1{
+    visibility: hidden;
+    opacity: 0;
+}
+ a div:hover >.product_img_2 {
+    visibility: visible;
+    opacity: 1;
+}
+/*----------------------------------------------------*/
+/*This is for third product section  of the page (brand)*/
+ .sec3{
+    margin-top: 50px;
+    position: relative;
+    border: 1px solid gray;
+    padding: 20px;
+    height: 170px;
+   width: 2514px;
+    margin-left: 2px;
+    left:0px;
+    transition: left 2s ;
+    overflow: hidden;
+}
+.sec3 > div{
+    float: left;
+    transition: left 2s ;
+    margin-top: 20px;
+    height: 200px;
+    padding: 0.5%;
+    width: 5.2%;
+    text-align: center;
+    height: 100px;
+    border-right: none;
+}
+.sec3 div a img{
+    padding: 10%;
+    border: 1px solid gray;
+    width: 100px;
+    height: 65px;
+}
+#sideSection .sec3  #scroll{
+    border: 1px solid gray;
+    height:12px;
+    position: absolute;
+    width: 100%;
+    top: 94%;
+    left: 0px;
+    transition: left 2s ;
+}
+#sideSection .sec3 #scroll span{
+    background:linear-gradient(rgb(85, 85, 85), rgb(177, 177, 177),rgb(85, 85, 85)) ;
+    height: 5px;
+    margin-top: 4px;
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 10px;
+    left: 0%;
+    width: 20%;
+    position: absolute;
+    transition: left 2s ;
+}
+
+/*----------------------------------------------------*/
+/*This is for the footer of the page*/
+footer{
+    width: 100%;
+    overflow: hidden;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+    border: double 1px gray;
+    display: inline-block;
+}
+#copyright{
+    width: 100%;
+    color: white ;
+    background-color: rgb(173, 0, 0);
+    padding: 5px 0px;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    color: red;
+}
+.footer > div {
+    margin: 20px ;
+    float: left;
+    margin-left: 140px;
+    color: white;
+}
+.footer div > div{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.footer div strong div{
+    font-weight: normal;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
